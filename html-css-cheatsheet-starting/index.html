@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <h1>CSS Cheatsheet</h1>
+    <h2>CSS Combinators</h2>
+    <div>
+        <p>A combinator is something that explains the relationship between the selectors. There are four different combinators in CSS: descendant selector, child selector, adjacent sibling selector, and general sibling selector.</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Descendant Selector</td>
+                <td>Matches all elements that are descendants of a specific element.</td>
+                <td>
+                    <img class="example" src="./Resources/Images/descendant-screenshot.png">
+                </td>
+            </tr>
+            <tr>
+                <td>Child Selector (>)</td>
+                <td>The child selector selects all elements that are the children of a specified element.</td>
+                <td>
+                    <img class="example" src="./Resources/Images/child-selector-screenshot.png">
+                </td>
+            </tr>
+            <tr>
+                <td>Adjacent Sibling Selector (+)</td>
+                <td>The adjacent sibling selector is used to select an element that is directly after another specific element. Sibling elements must have the same parent element, and "adjacent" means "immediately following".</td>
+                <td>
+                    <img class="example" src="./Resources/Images/adjacent-sibling-selector.png">
+                </td>
+            </tr>
+            <tr>
+                <td>General Sibling Selector (~)</td>
+                <td>The general sibling selector selects all elements that are next siblings of a specified element.</td>
+                <td>
+                    <img class="example" src="./Resources/Images/general-sibling-selector.png">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Recap: All CSS Combinator Selectors</h2>
+    <table class="second-table">
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Example Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="italicized-selector">element element</td>
+                <td>div p</td>
+                <td>Selects all <code>p </code>elements inside <code>div </code>elements</td>
+            </tr>
+            <tr>
+                <td class="italicized-selector">element>element</td>
+                <td>div > p</td>
+                <td>Selects all <code>p </code>elements where the parent is a <code>div </code>element</td>
+            </tr>
+            <tr>
+                <td class="italicized-selector">element+element</td>
+                <td>div + p</td>
+                <td>Selects the first <code>p </code>element that are placed immediately after <code>div</code> elements</td>
+            </tr>
+            <tr>
+                <td class="italicized-selector">element1~element2</td>
+                <td>p ~ ul</td>
+                <td>Selects every <code>ul </code> element that are preceded by a <code>p </code> element</td>
+            </tr>
+        </tbody>
+    </table>
+   
+</body>
+</html>
